@@ -1,10 +1,9 @@
-import { Children } from "react";
 import { createBrowserRouter } from 'react-router-dom';
-import MainLayout from "./layout/MainLayout";
-import Home from "./pages/home/Home";
-import Cart from "./pages/cart/Cart";
-import Login from "./pages/auth/login/Login";
-import Register from "./pages/auth/register/Register";
+import MainLayout from "./layout/MainLayout.jsx";
+import Home from "./pages/home/Home.jsx";
+import Cart from "./pages/cart/Cart.jsx";
+import Login from "./pages/auth/login/Login.jsx";
+import Register from "./pages/auth/register/Register.jsx";
 
 const router = createBrowserRouter([
     {
@@ -26,10 +25,10 @@ const router = createBrowserRouter([
             {
                 path:'/register',
                 element:<Register />
-            },
+            }
             
         ]
-    },
+    }
     
 ]);
 export default router;

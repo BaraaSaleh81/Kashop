@@ -20,14 +20,14 @@ export default function Navbar() {
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
+            sx={{ display:{xs:'flex',sm:'none'} }}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
            KASHOP
           </Typography>
-          <Box sx={{display:'flex',gap:2,alignContent:'center'}}>
+          <Box sx={{display:{xs:"none",sm:"flex"},gap:2,alignContent:'center'}}>
          <Link component={RouterLink} to={'/'} underline='none' color="inherit">Home</Link>
           <Link component={RouterLink} to={'/login'} underline='none' color="inherit">Login</Link>
           <Link component={RouterLink} to={'/register'} underline='none' color="inherit">Register</Link>

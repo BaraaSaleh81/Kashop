@@ -2,13 +2,17 @@ import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
 import { Outlet } from "react-router-dom";
+import Container from '@mui/material/Container';
+import Register from '../pages/auth/register/Register';
 
 
 export default function MainLayout() {
   return (
     <>
     <Navbar />
-    <Outlet />
+  <Container maxWidth="lg">
+<Outlet />
+</Container>
     <Footer />
     </>
   )
