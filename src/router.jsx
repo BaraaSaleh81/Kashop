@@ -4,12 +4,11 @@ import Home from "./pages/home/Home.jsx";
 import Cart from "./pages/cart/Cart.jsx";
 import Login from "./pages/auth/login/Login.jsx";
 import Register from "./pages/auth/register/Register.jsx";
-
 const router = createBrowserRouter([
     {
         path:'/',
         element: <MainLayout />,
-        Children:[
+        children:[
             {
                 index:true,
                 element: <Home />
@@ -23,7 +22,7 @@ const router = createBrowserRouter([
                 element:<Login />
             },
             {
-                path:'/register',
+                path:'register',
                 element:<Register />
             }
             
