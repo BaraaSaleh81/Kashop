@@ -2,8 +2,9 @@ import React from 'react'
 import axiosInstance from '../api/axiosInstance'
 import { useQuery } from '@tanstack/react-query';
 
+
 export default function useProducts(id) {
-    const getProducts = async()=>{
+    const getProduct= async()=>{
         const response = await axiosInstance.get(`/Products/${id}`);
         console.log(response); 
         return response.data;
@@ -11,9 +12,9 @@ export default function useProducts(id) {
 
     const query = useQuery({
         queryKey: ['Products','en',id],
-        queryFn:getProducts,
+        queryFn:getProduct,
         staleTime: 1000 * 60 * 5 
-    })
+    });
 
   return query;
 }
