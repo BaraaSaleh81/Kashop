@@ -6,7 +6,8 @@ const axiosInstance = axios.create({
     baseURL:`https://knowledgeshop.runasp.net/api`, 
         headers:
         {
-            "Accept-Language":"en"
+            "Accept-Language":"en",
+            
 
         }
     }

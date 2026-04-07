@@ -9,7 +9,7 @@ import Register from '../pages/auth/register/Register';
 export default function MainLayout() {
   return (
     <>
-    <Navbar />
+    <Navbar  />
   <Container maxWidth="lg">
 <Outlet />
 </Container>

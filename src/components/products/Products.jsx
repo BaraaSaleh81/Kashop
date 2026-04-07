@@ -1,14 +1,14 @@
 import React from 'react'
 import Box from '@mui/material/Box';
-import useProduct from '../../hooks/useProduct';
 import Loader from '../../ui/loader/Loader';
 import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import useProducts from '../../hooks/useProducts';
 
 
 
 export default function Products() {
-    const {data,isLoading,isError,error}= useProduct();
+    const {data,isLoading,isError,error}= useProducts();
      if (isLoading) return <Loader />
     if (isError) return <Box  color={'red'} >{error.Message}</Box>
     console.log(data);
